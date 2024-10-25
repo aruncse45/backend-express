@@ -1,4 +1,4 @@
-# Todo Backend API
+# Express.js + TypeScript Backend
 
 A practice backend app built with Express.js and TypeScript, ES Module.
 This project is for learning and practicing best practice of backend development.
