@@ -1,0 +1,67 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": ["error"],
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error",
+          "info"
+        ]
+      }
+    ],
+    "prefer-const": "warn",
+    "no-var": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_" }
+    ],
+    "object-shorthand": "warn",
+    "quote-props": [
+      "warn",
+      "as-needed"
+    ],
+    "@typescript-eslint/array-type": [
+      "warn",
+      {
+        "default": "array"
+      }
+    ],
+    "@typescript-eslint/consistent-type-assertions": [
+      "warn",
+      {
+        "assertionStyle": "as"
+      }
+    ],
+    "prettier/prettier": "warn",
+    "@typescript-eslint/no-unused-expressions": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
+
